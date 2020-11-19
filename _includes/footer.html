@@ -1,0 +1,38 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://gitlab.com/{{ site.gitlab_username }}"><span class="icon icon--gitlab">{% include icon-gitlab.svg %}</span><span class="username">{{ site.gitlab_username }}</span></a>
+          </li>
+
+          <li>
+            <a href="https://github.com/{{ site.github_username }}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">{{ site.github_username }}</span></a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">{{ site.twitter_username }}</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
