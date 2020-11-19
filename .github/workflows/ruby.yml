@@ -26,24 +26,15 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
+        bundler-cache: true
       
       #define the variables used by jekyll
       env:
         JEKYLL_ENV: production
         LC_ALL: C.UTF-8
 
-    - name: Cache ruby modules
-      uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-
-        restore-keys: |
-          ${{ runner.os }}-gems-
-
     - name: Install dependencies
-      run: |
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
+      run: bundle install
         
     - name: Run jekyll
       run: bundle exec jekyll build -d public
