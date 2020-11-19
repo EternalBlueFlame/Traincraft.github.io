@@ -14,7 +14,7 @@ on:
     branches: [ main ]
 
 jobs:
-  jekyll.build:
+  jekyllBuild:
 
     runs-on: ubuntu-latest
 
