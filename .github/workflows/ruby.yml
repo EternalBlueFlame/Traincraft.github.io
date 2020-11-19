@@ -14,7 +14,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  jekyll.build:
 
     runs-on: ubuntu-latest
 
@@ -33,12 +33,12 @@ jobs:
         JEKYLL_ENV: production
         LC_ALL: C.UTF-8
 
-    - name: Cache jekyll modules
+    - name: Cache ruby modules
       uses: actions/cache@v2
       env:
-        cache-name: cache-jekyll-modules
+        cache-name: cache-ruby-modules
       with:
-        path: ~/.jekyll
+        path: ~/.bundle
         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
