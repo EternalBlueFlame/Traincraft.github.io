@@ -20,6 +20,22 @@ You can get started with GitLab Pages using Jekyll easily by either forking this
 
 Remember you need to wait for your site to build before you will be able to see your changes.  You can track the build on the **Pipelines** tab.
 
+Uploading new pages is done in the pages folder, new posts are done in the posts folder.
+All posts are required to follow the naming convention `YYYY-MM-DD-name-of-post.ext`
+
+pages and posts may be in standard github .md format or using .markdown files following jekyll markdown rules https://www.markdownguide.org/tools/jekyll/
+
+pages and posts require a header similar to 
+```
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2016-03-24 15:32:14 -0300
+categories: new-release update
+---
+```
+with the approporate layout based on what it is. (page/post)
+
 ### Start by forking this repository
 
 1. Fork this repository.
@@ -53,13 +69,6 @@ your `username` or `groupname`. This can be done by navigating to your
 project's **Settings**.
 
 Read more about [user/group Pages][userpages] and [project Pages][projpages].
-
-## Troubleshooting
-
-1. CSS is missing! That means two things:
-    * Either that you have wrongly set up the CSS URL in your templates, or
-    * your static generator has a configuration option that needs to be explicitly
-    set in order to serve static assets under a relative URL.
 
 [ci]: https://about.gitlab.com/gitlab-ci/
 [Jekyll]: http://jekyllrb.com/
