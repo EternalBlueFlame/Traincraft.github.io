@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "test post"
+date:   2020-11-19 18:13:00 -0300
+categories: update
+---
+
+this is another test post in hopes things work correctly
