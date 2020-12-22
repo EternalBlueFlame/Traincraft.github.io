@@ -1,10 +1,119 @@
 ---
 layout: default
+
+primary_color: #3a3a3a
+secondary_color: #222222
+terinary_color: #2e5c82
+text_color: #99aab5
+
 ---
+<script> 
+var tags = document.getElementsByClassName("fadein"), sliders = document.getElementsByClassName("slide"), i, p, toolbar = document.getElementsByClassName("centered-top-container");
+ 
+window.onload = function(){
+ 
+  
+  
+	fadeanim();
+	onchange();
+};
+    
+window.onhashchange = function(){onchange()};
+window.onscroll = function () {fadeanim()};
+    
+function onchange(){
+    if(window.location.href.indexOf("image") > -1) {
+   document.getElementById("imageclose").style.display = "block";
+ } else {
+   document.getElementById("imageclose").style.display = "none";
+    }
+}
+
+ 
+function fadeanim(){
+ for (i = 0; i < sliders.length; i++) {
+  p=$(sliders[i]).position().left + ($(sliders[i]).outerWidth()*0.5);
+  if($(window).width()*0.42 > p){
+    $(sliders[i]).addClass("slideleft")
+  } else{
+    $(sliders[i]).addClass("slideright")
+  }
+ }
+ 
+ for (i = 0; i < tags.length; i++) {
+  if (($(document).scrollTop() + $(window).height()) > $(tags[i]).position().top && $(tags[i]).position().top > $(document).scrollTop()) {
+    $(tags[i]).addClass("visible")
+  } else {
+    $(tags[i]).removeClass("visible")
+  }
+ }
+}
+ 
+
+</script>
 
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
+<h2>
+TRAINCRAFT</h2>
+<br />welcome to the Traincraft home page!</div>
+<h1 class="fadein slideleft" id="about">
+ABOUT TRAINCRAFT</h1>
+<span class="fadein">Traincraft first came out on April 2011. At that time the mod was named "Train and Zeppelin mod" and only had one steam locomotive and one cart.</span><br />
+<span class="fadein">The locomotive had no GUI and you couldn't attach the cart to the locomotive. The first idea was to have a controllable powered minecart in which you could sit.</span><br />
+<span class="fadein">The mod got so much support that it was decided to continue the adventure, and many more locomotives and carts were added, over 80 to be more specific.</span><br />
+<span class="fadein">As time went on Spitfire4466 and Mr. Brutal could no longer maintain the mod and eventually opened it up for the community to maintain.</span><br />
+<span class="fadein">Now Traincraft has a a constantly expanding number of locomotives, rollingstock, and crafting machines, made by both the new dev team and the community.</span><br /><br />
+
+<span class="fadein">The maintainers aren't the only thing that changed, just as other major mods like Thermal Dynamics and Tinker's Construct have a base mod they rely on, so will TC.</span><br />
+<span class="fadein">This new base mod is called Trains in Motion (TiM), and serves as all the needed underworkings for trains, rollingstock, tracks, and much more.</span><br />
+<span class="fadein">The primary motivation for this was to help users to make add-ons easily, let players choose which add-ons they want, and to empower the artistic differences among the new team.</span><br />
+<span class="fadein">Another reason for the change was new rails with support for vanilla and flex track, while still keeping TC's iconic puzzle-piece design, with all the old shapes, and some new ones.</span><br />
+<span class="fadein">And the trains are finally getting the attention they deserve, with animations, dynamic lighting, remastered models, and many customization options heavily inspired by Sid Meier's Railroads.</span><br />
+<span class="fadein">In addition to all these new features this new base will make it far easier to support multiple versions of MC at once, from 1.7.10 all the way to 1.12 (1.13 TBA).</span><br />
+<span class="fadein">We're also taking the extra time to be sure, even with all the new features, the mod will run better on weaker computers and weaker internet connections.</span><br />
+<span class="fadein">However one thing we don't wanna change is the core game-play of TC. TC was always a very unique mod, and even with 4+ other active train mods, it's still unique, and we believe that's one of the many things that makes it strong.</span>
+
+<h2 class="fadein slideleft">
+THE DEVS</h2>
+<br />
+<div class="flex-container">
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://1.bp.blogspot.com/-m-ZrtvINl4g/W4NPcVRGa9I/AAAAAAAABcE/kvMH3y7O36Q_AaAQ7v9tmeZttpHMqYwWwCLcBGAs/s128/spitfire.jpg" />
+<br />Spitfire4466<br />Founder<br />Retired
+</div>
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://1.bp.blogspot.com/-POg5FjPsDng/W4NPavbA0rI/AAAAAAAABbs/zDGJiVaT5vMq0rqJYS9aI4tT26ZsM6RaACLcBGAs/s128/mrbrutal.jpg" />
+<br />Mr. Brutal<br />Previous lead dev<br />Retired
+</div>
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://2.bp.blogspot.com/-BA6fYDo-OyE/W4NPZ6fREeI/AAAAAAAABbk/uBnirCccd2cdL2-ntpXZsn4BtisXkzZiACLcBGAs/s128/eternal.png" />
+<br />Eternal Blue Flame<br />Current lead dev<br />
+</div>
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://1.bp.blogspot.com/-MLrls9u2JeA/W4NPbdyejHI/AAAAAAAABb0/Z9itcpgQocw9J8YNhqaNAQA6oCbxOyWPwCLcBGAs/s128/nitro.jpg" />
+<br />NitroxydeX
+</div>
+</div>
+<h2 class="fadein slideleft">
+THE ARTISTS</h2>
+<br />
+<div class="flex-container">
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://4.bp.blogspot.com/-Esklez6keBM/W4NPY7Vq0mI/AAAAAAAABbY/CVucjtk-xdomxE2da_FGzTjWYq-DLL7EQCLcBGAs/s128/bros.jpg" />
+<br />broscolotos
+</div>
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://4.bp.blogspot.com/-uFAvdfv_Nsk/W4NPcPVbEUI/AAAAAAAABcA/rUMy6rrs-eU0_0C3vog1xNHdvAvuM_6JgCLcBGAs/s128/riggs.jpg" />
+<br />Riggs64<br />Also runs RWC
+</div>
+<div class="flex-item fadein flex-image-large slide">
+<img src="https://1.bp.blogspot.com/-qEi0o392eo0/XQwz7H4nCtI/AAAAAAAACAo/UGSy9Yp4OyUSZkuD8AlHNVJASDi0TeqJACLcBGAs/s128/greenpc.png" />
+<br />Green PC
+</div>
+</div>
+
 
   <ul class="post-list">
     {% for post in site.posts %}

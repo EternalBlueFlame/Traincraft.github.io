@@ -368,5 +368,115 @@ pre {
 }
 
 
+
+html, .fadein {
+    scroll-behavior: smooth;
+    color: #dcddde;
+    text-shadow: 1px 1px 0 #333;
+    text-align: center;
+}
+#gallery, #about, #downloads, #community, #tim, .devs, .artists {
+    background-image:url(https://1.bp.blogspot.com/-mwK-ETR34lY/WxS5psCwgQI/AAAAAAAABVU/y72mlJX5aNcoTJPLDLlTLOwZUQh26gqrQCPcBGAYYCw/s1920/bg_1.jpg);
+    width:102%;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:-1%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#community, .devs{
+ background-image:url(https://2.bp.blogspot.com/-ryQFlEDr-mE/WxS5qMgzDEI/AAAAAAAABVY/pyJaqER4swcgxDttbIckggbnTrN-vz2bACPcBGAYYCw/s1920/bg_3.jpg);
+}
+#gallery #downloads{
+    background-image:url(https://1.bp.blogspot.com/-jOh0psTOH4Y/WxS5pjDUSJI/AAAAAAAABVQ/Q43SOkiLllwYbTunNXXEVwRIXMcdp0EKgCPcBGAYYCw/s1920/bg_2.jpg);
+}
+
+.image-lightbox-new {
+    display: none;
+    max-width: 96%;
+    max-height: 96%;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.5);
+    
+}
+.expand img{ /*@Depreciated*/
+    width:240px;
+    height:160px;
+}
+
+.close {
+    display:none;
+    position: fixed;
+    width: 20px; height: 20px;
+    top:5%;
+    right:5%;
+    z-index: 5000;
+}
+ 
+.close a {
+    height: auto; width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+.expand{
+    width:240px;
+    height:160px;
+}
+
+ 
+img[id^=image]:target {
+    z-index: 4000;
+    display: block;
+}
+
+.fadein{
+    opacity: 0;
+   transition: all 0.75s;
+}
+.slideleft{
+    opacity:0; 
+    transform: translate(-100vw, 0px); 
+   transition: all 2s;
+}
+.slideright{
+    opacity:0; 
+    transform: translate(100vw, 0px); 
+   transition: all 2s;
+}
+.visible{
+    opacity:1; 
+    transform: translate(0, 0);
+}
+    
+.showclose, .post-header, .post-title, .post-sidebar, .post-body-container::before, .collapsed-header .centered-top-placeholder .post-body-container::before{
+ display:none;
+}
+.centered-top-container{
+position: fixed;
+z-index: 115;
+width: 100%;
+}
+.centered-top-container.sticky{
+ display:block;
+}
+
+.flex-item a{
+ text-decoration: none;
+}
+
+
 @import url("header.scss");
 @import url("footer.scss");
