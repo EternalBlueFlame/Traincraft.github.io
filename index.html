@@ -29,7 +29,7 @@ function onchange(){
  
 function fadeanim(){
  for (i = 0; i < sliders.length; i++) {
-  p=sliders[i].getBoundingClientRect().left + (sliders[i].outerWidth()*0.5);
+  p=sliders[i].getBoundingClientRect().left + (sliders[i].getBoundingClientRect.width*0.5);
   if($(window).width()*0.42 > p){
     sliders[i].addClass("slideleft")
   } else{
