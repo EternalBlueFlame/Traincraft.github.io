@@ -38,7 +38,7 @@ function fadeanim(){
  }
  
  for (i = 0; i < tags.length; i++) {
-  if (($(document).scrollTop() + $(window).height()) > tags[i].getBoundingClientRect().top && tags[i]..getBoundingClientRect().top > document.scrollTop()) {
+  if (($(document).scrollTop() + $(window).height()) > tags[i].getBoundingClientRect().top && tags[i].getBoundingClientRect().top > document.scrollTop()) {
     tags[i].addClass("visible")
   } else {
     tags[i].removeClass("visible")
