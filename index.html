@@ -29,7 +29,7 @@ function onchange(){
  
 function fadeanim(){
  for (i = 0; i < sliders.length; i++) {
-  p=sliders[i].position().left + (sliders[i].outerWidth()*0.5);
+  p=sliders[i]..getBoundingClientRect().left + (sliders[i].outerWidth()*0.5);
   if($(window).width()*0.42 > p){
     sliders[i].addClass("slideleft")
   } else{
@@ -38,7 +38,7 @@ function fadeanim(){
  }
  
  for (i = 0; i < tags.length; i++) {
-  if (($(document).scrollTop() + $(window).height()) > tags[i].position().top && tags[i].position().top > document.scrollTop()) {
+  if (($(document).scrollTop() + $(window).height()) > tags[i]..getBoundingClientRect().top && tags[i]..getBoundingClientRect().top > document.scrollTop()) {
     tags[i].addClass("visible")
   } else {
     tags[i].removeClass("visible")
