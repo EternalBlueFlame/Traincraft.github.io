@@ -4,11 +4,11 @@
 
     <a class="site-title" href="{{site.url}}">{{ site.title }}</a>
 
-    <nav class="site-nav">
+    <nav id="site-nav">
       <a href="{{ page.url | prepend: "#" }}" class="menu-icon">
       <span class="icon icon--gitlab">{% include icon-menu.svg %}</span>
     </a>
-      <div class="trigger hidden-menu">
+      <div id="trigger" class="hidden-menu">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.url }}">{{ my_page.title }}</a>
