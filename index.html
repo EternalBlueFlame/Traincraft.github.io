@@ -31,17 +31,17 @@ function fadeanim(){
  for (i = 0; i < sliders.length; i++) {
   p=sliders[i].getBoundingClientRect().left + (sliders[i].getBoundingClientRect.width*0.5);
   if(screen.width*0.42 > p){
-    sliders[i].addClass("slideleft")
+    sliders[i].classList.add("slideleft")
   } else{
-    sliders[i].addClass("slideright")
+    sliders[i].classList.remove("slideright")
   }
  }
  
  for (i = 0; i < tags.length; i++) {
   if ((document.scrollTop() + screen.height) > tags[i].getBoundingClientRect().top && tags[i].getBoundingClientRect().top > document.scrollTop()) {
-    tags[i].addClass("visible")
+    tags[i].classList.add("visible")
   } else {
-    tags[i].removeClass("visible")
+    tags[i].classList.remove("visible")
   }
  }
 }
