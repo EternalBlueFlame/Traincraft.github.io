@@ -24,73 +24,50 @@
     }
 }
 
-input[data-function*='swipe'] {
-  position: absolute;
-  opacity: 0;
-}
-label[data-function*='swipe'] {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  display: block;
-  width: 42px;
-  height: 42px;
-  text-align: center;
-  color: #333;
-  cursor: pointer;
-  transform: translate3d(0, 0, 0);
-  transition: transform .3s;
-}
-label[data-function*='swipe']:hover {
-  color: #263249;
-}
-input[data-function*='swipe']:checked ~ label[data-function*='swipe'] {
-  transform: translate3d(280px, 0, 0);
-}
-label[data-function*='swipe']:checked {
-  display: block;
-}
-label:nth-child(2){
-  display: none;
-}
-input[data-function*='swipe']:checked ~ label:nth-child(2){
-  display: block;
-  transform: translate3d(280px, 0px, 0px);
-}
-input[data-function*='swipe']:checked ~ label:nth-child(3){
-  display: none;
-}
-input[data-function*='swipe']:checked ~ .headings {
-  transform: translate3d(280px, 0px, 0px);
-}
-input[data-function*='swipe']:checked ~ .sidebar {
-  transform: translate3d(0px, 0px, 0px);
-}
-input[data-function*='swipe']:checked ~ .sidebar .menu li {
-  width: 100%;
-}
-.sidebar {
-  transform: translate3d(-280px, 0px, 0px);
-  position: fixed;
-  width: 25%;
-  left: 0;
-  top: 0;
-  height: 100%;
-  transition: all .3s;
-}
-.menu li {
-  padding: 10px;
-  list-style: none;
-  width: 0%;
-}
-.menu li a {
-  color: #fff;
-  border: 3px solid #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 900;
-  display: block;
+.toggle {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
   text-decoration: none;
-  padding: 5px 0px 5px 0;
-  margin: 0 20px;
+  font-size: 35px;
+  color: black;
+  z-index: 1;
+}
+.toggle:hover {
+  color: RGB(179, 2, 35);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: -25%;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+  width: 25%;
+  padding: 10px 40px 10px 10px;
+  z-index: 0;
+}
+.sidebar li {
+  margin-bottom: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  list-style: none;
+}
+.sidebar li:hover {
+  color: white;
+}
+
+#side {
+  display: none;
+}
+#side:checked + .page-wrap .sidebar {
+  transform: translateX(25%);
+}
+#side:checked + .page-wrap .page-content {
+  transform: translateX(25%);
 }
