@@ -3,8 +3,9 @@
 	<input type="checkbox" id="side" name="" value="">
 
   <div class="sidebar">
-		<h1>Navigation</h1>
-		<a class="site-title" href="{{site.url}}">{{ site.title }}</a>
+	<h1>Navigation</h1>
+	<a class="site-title" href="{{site.url}}">{{ site.title }}</a>
+	<hr />
 	<ul>
 		{% for my_page in site.pages %}
 			{% if my_page.title %}
