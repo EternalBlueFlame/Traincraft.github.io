@@ -65,9 +65,6 @@
 #side {
   display: none;
 }
-#side:checked + .page-wrap .sidebar {
-  transform: translateX(25%);
-}
-#side:checked + .page-wrap .page-content {
+#side:checked + .sidebar {
   transform: translateX(25%);
 }
