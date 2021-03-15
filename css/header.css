@@ -24,9 +24,12 @@
     }
 }
 
-.container {
-  display: flex;
-  min-height: 100%;
+.sidebar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	height: 100%;
 }
 input[data-function*='swipe'] {
   position: absolute;
@@ -36,11 +39,9 @@ label[data-function*='swipe'] {
   position: absolute;
   top: 30px;
   left: 30px;
-  z-index: 1;
   display: block;
   width: 42px;
   height: 42px;
-  font: 42px fontawesome;
   text-align: center;
   color: #333;
   cursor: pointer;
