@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title:  "Blog"
 
 ---
 <h2 class="fadein slideleft">BLOG</h2>
