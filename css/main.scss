@@ -249,12 +249,17 @@ pre {
 
     > li {
         margin-bottom: $spacing-unit;
+		background-color: $grey-color;
+		border-radius: 15px;
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+	background-color: #6FA5D3;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .post-link {

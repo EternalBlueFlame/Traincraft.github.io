@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "About Traincraft"
+title:  "About"
 date:   2021-03-18 15:32:14 -0300
 categories: update
 ---
