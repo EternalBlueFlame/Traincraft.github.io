@@ -8,7 +8,7 @@ title:  "Blog"
 <h1 id="about">Blog</h1>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li class="fadein slideleft">
+      <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
