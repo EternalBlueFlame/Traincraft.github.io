@@ -378,36 +378,33 @@ html, .fadein {
     text-shadow: 1px 1px 0 #333;
     text-align: center;
 }
-#about,#tim, #artists {
+#about, #tim, #artists {
     background-image:url(/Traincraft.github.io/assets/banners/bg_1.jpg);
     min-height: 160px;
     width:105%;
     padding-top:100px;
-    padding-bottom:20px;
     margin-left:-1%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#community, #devs{
+#community, #devs {
  background-image:url(/Traincraft.github.io/assets/banners/bg_3.jpg);
     min-height: 160px;
     width:105%;
     padding-top:100px;
-    padding-bottom:20px;
     margin-left:-1%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#gallery #downloads{
+#gallery, #downloads {
     background-image:url(/Traincraft.github.io/assets/banners/bg_2.jpg);
     min-height: 160px;
     width:105%;
     padding-top:100px;
-    padding-bottom:20px;
     margin-left:-1%;
     background-attachment: fixed;
     background-position: center;
