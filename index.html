@@ -47,8 +47,8 @@ function fadeanim(){
  }
 
  for (i = 0; i < parallax.length; i++) {
-  var yvalue = document.scrollingElement.scrollTop * 0.5;
-  parallax[i].style.backgroundPosition = "center" + " " + yvalue + "px";
+  var yvalue = (document.scrollingElement.scrollTop * 0.25) % 200;
+  parallax[i].style.backgroundPosition = "top" + " " + yvalue + "px";
  }
 
 }
@@ -71,15 +71,15 @@ ABOUT TRAINCRAFT</h1>
 A whole assortment of trains and stock to play with!</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_3.png" /><br />
-<b>Zeppelins<b/><br /><hr/><br />
+<b>Zeppelins</b><br /><hr/><br />
 A zeppelin and an airship to fly in</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_4.png" /><br />
-<b>Compatible<b/><br /><hr /><br />
+<b>Compatible</b><br /><hr /><br />
 Works great with other mods for even more fun!</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_5.png" /><br />
-<b>Good looking<b/><br /><hr /><br />
+<b>Good looking</b><br /><hr /><br />
 Great train models of various locos and wagons<br />many designed by the community itself!</div>
 </div>
 
