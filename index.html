@@ -47,8 +47,8 @@ function fadeanim(){
  }
 
  for (i = 0; i < parallax.length; i++) {
-  var yvalue = (document.scrollingElement.scrollTop * 0.25) % 200;
-  parallax[i].style.backgroundPosition = "top" + " " + yvalue + "px";
+  var yvalue = ((document.scrollingElement.scrollTop * 0.25)-100) % 200;
+  parallax[i].style.backgroundPosition = "center" + " " + yvalue + "px";
  }
 
 }
