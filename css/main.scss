@@ -397,12 +397,10 @@ html, .fadein {
 }
 
 .parallax {
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
+  min-height: 160px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px;
+  padding-top: 100px;
 }
 
 .image-lightbox-new {

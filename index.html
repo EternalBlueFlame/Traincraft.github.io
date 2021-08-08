@@ -5,6 +5,7 @@ layout: default
 <script type="text/javascript"> 
 //<![CDATA[
 var tags = document.getElementsByClassName("fadein");
+var parallax = document.getElementsByClassName("parallax");
 var sliders = document.getElementsByClassName("slide");
 var i;
 var p;
@@ -44,8 +45,13 @@ function fadeanim(){
     tags[i].classList.remove("visible")
   }
  }
+
+ for (i = 0; i < parallax.length; i++) {
+  var yvalue = document.scrollingElement.scrollTop * 0.5;
+  parallax[i].style.backgroundPosition = "center" + " " + yvalue + "px";
+ }
+
 }
- 
 //]]>
 
 </script>
@@ -61,20 +67,20 @@ ABOUT TRAINCRAFT</h1>
 <div class="flex-container">
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_2.png" /><br />
-200+ Trains and stock<br /><hr /><br />
+<b>200+ Trains and stock</b><br /><hr /><br />
 A whole assortment of trains and stock to play with!</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_3.png" /><br />
-Zeppelins<br /><hr/><br />
+<b>Zeppelins<b/><br /><hr/><br />
 A zeppelin and an airship to fly in</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_4.png" /><br />
-Compatible<br /><hr /><br />
+<b>Compatible<b/><br /><hr /><br />
 Works great with other mods for even more fun!</div>
 <div class="flex-item fadein flex-image-xlarge slide">
 <img src="/Traincraft.github.io/assets/icons/icon_5.png" /><br />
-Good looking<br /><hr /><br />
-Great train models of various locos and wagons, many designed by the community itself!</div>
+<b>Good looking<b/><br /><hr /><br />
+Great train models of various locos and wagons<br />many designed by the community itself!</div>
 </div>
 
 <h1 class="parallax fadein slideleft" id="devs">
