@@ -22,7 +22,7 @@ window.onscroll = function () {fadeanim()};
 function onchange(){
     if(window.location.href.indexOf("image") > -1) {
    document.getElementById("imageclose").style.display = "block";
- } else {
+ } else if(document.getElementById("imageclose") !== null) {
    document.getElementById("imageclose").style.display = "none";
     }
 }
@@ -33,7 +33,7 @@ function fadeanim(){
   p=sliders[i].getBoundingClientRect().left + (sliders[i].getBoundingClientRect.width*0.5);
   if(screen.width*0.42 > p){
     sliders[i].classList.add("slideleft")
-  } else{
+  } else {
     sliders[i].classList.remove("slideright")
   }
  }
@@ -47,7 +47,7 @@ function fadeanim(){
  }
 
  for (i = 0; i < parallax.length; i++) {
-  var yvalue = ((document.scrollingElement.scrollTop * 0.25)-200) % 200;
+  var yvalue = ((document.scrollingElement.scrollTop * 0.25) % 200)-200;
   parallax[i].style.backgroundPosition = "center" + " " + yvalue + "px";
  }
 
@@ -82,6 +82,8 @@ Works great with other mods for even more fun!</div>
 <b>Good looking</b><br /><hr /><br />
 Great train models of various locos and wagons<br />many designed by the community itself!</div>
 </div>
+<h1 class="parallax fadein slideleft" id="gallery">
+GALLERY</h1><br /> Soon <br />
 
 <h1 class="parallax fadein slideleft" id="devs">
 THE DEVS</h1>
