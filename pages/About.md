@@ -26,14 +26,14 @@ categories: update
 <br />Traincraft always had a history of working with the community
 <br />But since opening full source to the community there has been a massive number of contributions, mostly for models.
 <br />To ensure everything looks and feels right we have a number of rules that content needs to abode by to get in.
-<br />With Traincraft-5 we intend to help groups that want to make content with their own unique styles, not just our own.
+<br />With Traincraft-4.5 we intend to help groups that want to make content with their own unique styles, not just our own.
 <br />We intend to do this will full support for flans-esk add-ons.
 <br />We chose a flans-like style over more modern content packs because the flans style is actually a mod itself.
-<br />On the front that makes it sound more difficult, and admittedly it is to some extent.
+<br />On the front that makes it seem more difficult, and admittedly it is to some small extent.
 <br />But it removes all limits for content creators, allowing not just custom trains and stock, but everything from custom blocks to tracks and entity logic.
 <br />Over time we intend to write new ways for features to be interacted with, both to add new functionality, and further simplify them for users with no experience.
 <br />
-<br />Over 2021 we will be adding many new features to set the groundwork for many years to come.
+<br />We will be adding many new features to set the groundwork for many years to come.
 <br />New rails with support for vanilla and Track API, while still keeping TC's iconic puzzle-piece design, with all the old shapes, and some new ones.
 <br />Trains are finally getting the attention they deserve, we'll be adding in animations, dynamic lighting and model fixes.
 <br />We're taking the extra time to be sure, even with all the new features, the mod will run better on weaker computers and weaker internet connections.
